@@ -27,6 +27,27 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Benefits Section */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-serif text-center mb-16">Our Approach to Resolution</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {benefits.map((benefit, index) => (
+              <div key={index} className="glass-effect rounded-2xl p-8 relative group hover:scale-105 transition-transform duration-300">
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent rounded-2xl -z-10" />
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                  {benefit.icon}
+                </div>
+                <h3 className="text-2xl font-serif mb-4 text-center">{benefit.title}</h3>
+                <p className="text-gray-300 text-center leading-relaxed">{benefit.description}</p>
+                <p className="text-primary mt-4 text-center italic">{benefit.keyPoint}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20">
         <div className="container mx-auto px-4">
@@ -63,6 +84,27 @@ const Index = () => {
     </div>
   );
 };
+
+const benefits = [
+  {
+    title: "Root-Cause Resolution",
+    description: "We approach each tension as a puzzle to be solved, investigating and addressing the underlying causes of your discomfort rather than just treating symptoms.",
+    keyPoint: "Your body holds the answers. Let's find them together.",
+    icon: <div className="w-8 h-8 bg-primary rounded-full" />,
+  },
+  {
+    title: "Holistic Alignment",
+    description: "Experience transformation that goes beyond physical relief—where releasing bodily tension creates space for emotional clarity and renewed purpose.",
+    keyPoint: "Sometimes, the solution isn't fighting harder—it's letting go.",
+    icon: <div className="w-8 h-8 bg-primary rounded-full" />,
+  },
+  {
+    title: "Lasting Transformation",
+    description: "Our approach doesn't just provide temporary relief—it empowers you with understanding and techniques for maintaining long-term well-being and performance.",
+    keyPoint: "This is where release leads to renewal.",
+    icon: <div className="w-8 h-8 bg-primary rounded-full" />,
+  },
+];
 
 const services = [
   {
