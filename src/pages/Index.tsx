@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import CTASection from "@/components/CTASection";
+import FAQSection from "@/components/FAQSection";
 
 const Index = () => {
   return (
@@ -146,6 +147,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* CTA Section */}
       <CTASection />
