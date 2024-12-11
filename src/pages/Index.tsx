@@ -84,6 +84,47 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section id="testimonials" className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-1/4 -right-1/4 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl animate-flow-right" />
+          <div className="absolute bottom-1/4 -left-1/4 w-96 h-96 bg-secondary/20 rounded-full filter blur-3xl animate-flow-left" />
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <h2 className="text-4xl md:text-5xl font-serif text-center mb-16">Transformative Experiences</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="glass-effect rounded-2xl p-8 relative group hover:scale-105 transition-transform duration-300">
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent rounded-2xl -z-10" />
+                
+                <div className="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden">
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.name} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                
+                <blockquote className="text-gray-300 text-center mb-6 italic">
+                  "{testimonial.quote}"
+                </blockquote>
+                
+                <div className="text-center">
+                  <cite className="text-primary font-medium block not-italic">
+                    {testimonial.name}
+                  </cite>
+                  <span className="text-sm text-gray-400">
+                    {testimonial.location}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20">
         <div className="container mx-auto px-4">
@@ -157,6 +198,27 @@ const services = [
     title: "Movement Education",
     description: "Learn how to maintain alignment and prevent future tension through mindful movement.",
     icon: <div className="w-8 h-8 bg-primary rounded-full" />,
+  },
+];
+
+const testimonials = [
+  {
+    quote: "After years of chronic back pain and countless treatments, Resolve Bodywork helped me understand and release patterns I didn't even know I was holding. The relief isn't just physical—I feel mentally clearer and more present in my daily life.",
+    name: "Sarah Mitchell",
+    location: "Bay Area Professional",
+    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=300&h=300",
+  },
+  {
+    quote: "The holistic approach at Resolve Bodywork transformed not just my posture but my entire relationship with stress. I've learned to let go instead of pushing through, and the results speak for themselves.",
+    name: "Michael Chen",
+    location: "Tech Executive",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=300&h=300",
+  },
+  {
+    quote: "As an athlete, I thought pain was just part of the game. Resolve Bodywork showed me how releasing deep tension patterns could actually improve my performance. Now I move with more freedom and power than ever.",
+    name: "Alex Rodriguez",
+    location: "Professional Athlete",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=300&h=300",
   },
 ];
 
