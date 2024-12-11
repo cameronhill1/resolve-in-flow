@@ -48,6 +48,42 @@ const Index = () => {
         </div>
       </section>
 
+      {/* About Section */}
+      <section id="about" className="py-24 relative">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-serif text-center mb-12">Our Philosophy</h2>
+            
+            <div className="glass-effect rounded-3xl p-8 md:p-12 relative">
+              <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent rounded-3xl -z-10" />
+              
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-2xl font-serif mb-4 text-primary">The Power of Resolution</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    At Resolve Bodywork, we understand that true healing comes from addressing both physical tension and emotional holding patterns. Our name carries a dual meaning that reflects our comprehensive approach: to resolve (loosen and release) physical restrictions, while helping you find your inner resolve (strength and clarity) for lasting transformation.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-2xl font-serif mb-4 text-primary">Beyond Symptom Relief</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    We don't just treat symptoms—we investigate and address root causes. Each session is an opportunity to decode the story your body tells through its patterns of tension and restriction. Through skilled touch and mindful awareness, we help you release not just physical discomfort, but the deeper patterns that may be holding you back.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-2xl font-serif mb-4 text-primary">Your Journey to Freedom</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Our goal is to guide you toward a life of greater ease and authenticity. Whether you're seeking relief from chronic pain, looking to improve performance, or ready for deep personal transformation, we're here to support your journey. Through our work together, you'll discover that sometimes the path forward isn't about pushing harder—it's about learning to let go.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20">
         <div className="container mx-auto px-4">
