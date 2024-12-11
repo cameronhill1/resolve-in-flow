@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import CTASection from "@/components/CTASection";
 
 const Index = () => {
   return (
@@ -147,17 +148,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary/10">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-serif mb-8">Ready to Transform Your Life?</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Take the first step towards a pain-free, balanced life. Book your session today and experience the power of professional bodywork.
-          </p>
-          <button className="bg-primary px-8 py-4 rounded-full text-lg font-medium hover:bg-primary/90 transition-colors">
-            Schedule a Consultation
-          </button>
-        </div>
-      </section>
+      <CTASection />
     </div>
   );
 };
