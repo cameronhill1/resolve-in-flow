@@ -1,19 +1,19 @@
 const CTASection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden" aria-labelledby="cta-title">
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 -left-1/4 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl animate-flow-left" />
-        <div className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-secondary/20 rounded-full filter blur-3xl animate-flow-right" />
+        <div className="absolute top-1/4 -left-1/4 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl animate-flow-left" aria-hidden="true" />
+        <div className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-secondary/20 rounded-full filter blur-3xl animate-flow-right" aria-hidden="true" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="glass-effect rounded-3xl p-12 md:p-16 text-center max-w-4xl mx-auto">
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent rounded-3xl -z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent rounded-3xl -z-10" aria-hidden="true" />
           
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">Ready to Transform Your Life?</h2>
+          <h2 id="cta-title" className="text-4xl md:text-5xl font-serif mb-6">Ready to Transform Your Life?</h2>
           
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Take the first step towards a life of greater ease and authenticity. Experience the power of professional bodywork that addresses not just symptoms, but the root causes of tension and discomfort.
+            Take the first step towards a life of greater ease and authenticity. Experience the power of professional bodywork that addresses not just symptoms, but the root causes of tension and discomfort in Brighton & Hove.
           </p>
           
           <p className="text-lg text-primary italic mb-8">
@@ -25,9 +25,10 @@ const CTASection = () => {
             data-cal-link="resolvebodywork/flagship"
             data-cal-namespace="flagship"
             data-cal-config='{"layout":"month_view"}'
+            aria-label="Schedule your bodywork session"
           >
             <span className="relative z-10">Schedule Your Session</span>
-            <div className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+            <div className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300" aria-hidden="true" />
           </button>
         </div>
       </div>

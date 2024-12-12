@@ -7,17 +7,17 @@ import {
 
 const FAQSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden" aria-labelledby="faq-title">
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 -right-1/4 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl animate-flow-right" />
-        <div className="absolute bottom-1/4 -left-1/4 w-96 h-96 bg-secondary/20 rounded-full filter blur-3xl animate-flow-left" />
+        <div className="absolute top-1/4 -right-1/4 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl animate-flow-right" aria-hidden="true" />
+        <div className="absolute bottom-1/4 -left-1/4 w-96 h-96 bg-secondary/20 rounded-full filter blur-3xl animate-flow-left" aria-hidden="true" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-serif text-center mb-16">Common Questions</h2>
+        <h2 id="faq-title" className="text-4xl md:text-5xl font-serif text-center mb-16">Common Questions</h2>
         
         <div className="glass-effect rounded-3xl p-8 md:p-12 max-w-3xl mx-auto">
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent rounded-3xl -z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent rounded-3xl -z-10" aria-hidden="true" />
           
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="border-b border-primary/20">
