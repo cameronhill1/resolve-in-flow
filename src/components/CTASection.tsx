@@ -20,7 +20,12 @@ const CTASection = () => {
             Feel freer, lighter, and more in tune with your body than ever before.
           </p>
           
-          <button className="bg-primary px-8 py-4 rounded-full text-lg font-medium hover:bg-primary/90 transition-colors group relative overflow-hidden">
+          <button 
+            className="bg-primary px-8 py-4 rounded-full text-lg font-medium hover:bg-primary/90 transition-colors group relative overflow-hidden"
+            data-cal-link="resolvebodywork/flagship"
+            data-cal-namespace="flagship"
+            data-cal-config='{"layout":"month_view"}'
+          >
             <span className="relative z-10">Schedule Your Session</span>
             <div className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
           </button>

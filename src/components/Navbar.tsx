@@ -29,7 +29,12 @@ const Navbar = () => {
               <NavLink href="#about">About</NavLink>
               <NavLink href="#testimonials">Testimonials</NavLink>
               <NavLink href="#contact">Contact</NavLink>
-              <button className="bg-primary px-6 py-2 rounded-full text-white hover:bg-primary/90 transition-colors">
+              <button 
+                className="bg-primary px-6 py-2 rounded-full text-white hover:bg-primary/90 transition-colors"
+                data-cal-link="resolvebodywork/flagship"
+                data-cal-namespace="flagship"
+                data-cal-config='{"layout":"month_view"}'
+              >
                 Book Now
               </button>
             </div>
@@ -45,7 +50,12 @@ const Navbar = () => {
             <MobileNavLink href="#about">About</MobileNavLink>
             <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
             <MobileNavLink href="#contact">Contact</MobileNavLink>
-            <button className="w-full text-center bg-primary px-6 py-2 rounded-full text-white hover:bg-primary/90 transition-colors">
+            <button 
+              className="w-full text-center bg-primary px-6 py-2 rounded-full text-white hover:bg-primary/90 transition-colors"
+              data-cal-link="resolvebodywork/flagship"
+              data-cal-namespace="flagship"
+              data-cal-config='{"layout":"month_view"}'
+            >
               Book Now
             </button>
           </div>

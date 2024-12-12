@@ -1,6 +1,12 @@
 import { MoveRight } from "lucide-react";
+import { useEffect } from "react";
+import { initializeCalendar } from "@/utils/calendar";
 
 const HeroSection = () => {
+  useEffect(() => {
+    initializeCalendar();
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -24,7 +30,12 @@ const HeroSection = () => {
           <p className="text-xl md:text-2xl text-gray-300 mb-8">
             Advanced bodywork focused on releasing tension and enabling a pain-free, balanced life.
           </p>
-          <button className="group bg-primary px-8 py-4 rounded-full text-lg font-medium hover:bg-primary/90 transition-all duration-300 hover:scale-105">
+          <button 
+            className="group bg-primary px-8 py-4 rounded-full text-lg font-medium hover:bg-primary/90 transition-all duration-300 hover:scale-105"
+            data-cal-link="resolvebodywork/flagship"
+            data-cal-namespace="flagship"
+            data-cal-config='{"layout":"month_view"}'
+          >
             Book Your First Session
             <MoveRight className="inline-block ml-2 transition-transform group-hover:translate-x-1" />
           </button>
