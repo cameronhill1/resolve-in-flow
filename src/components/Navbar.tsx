@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <img 
-              src="/logo.png" 
+              src="/lovable-uploads/b90bde5f-3c08-49b2-8a5d-79ebe8037c2b.png" 
               alt="Resolve Bodywork Logo" 
               className="h-8 w-auto"
             />
