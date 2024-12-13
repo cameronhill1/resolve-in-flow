@@ -8,8 +8,13 @@ const Navbar = () => {
     <nav className="fixed w-full z-50 bg-black/20 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <span className="text-2xl font-serif text-white">Resolve Bodywork</span>
+          <div className="flex-shrink-0 flex items-center">
+            <img 
+              src="/logo.png" 
+              alt="Resolve Bodywork Logo" 
+              className="h-8 w-auto"
+            />
+            <span className="text-2xl font-serif text-white ml-2">Resolve Bodywork</span>
           </div>
           
           {/* Mobile menu button */}
